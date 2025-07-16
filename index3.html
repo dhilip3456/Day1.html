@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    input, select, button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #para {
+      background-color: red;
+      color: white;
+      padding: 10px;
+    }
+
+    #result {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+
+  <!-- Number inputs with IDs -->
+  <input type="number" id="num1" placeholder="Enter the first value" />
+  <input type="number" id="num2" placeholder="Enter the second value" />
+
+  <!-- Operation dropdown -->
+  <select id="operation">
+    <option value="add">Addition</option>
+    <option value="multiplication">Multiplication</option>
+  </select>
+
+  <!-- Calculate button -->
+  <button onclick="calculate()">Calculate</button>
+
+  <!-- Result and styled paragraph -->
+  <p id="result">Result will appear here</p>
+  <p id="para">Lorem ipsum dolor sit amet.</p>
+
+  <!-- JavaScript logic -->
+  <script>
+    function calculate() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      const operation = document.getElementById("operation").value;
+      let result;
+
+      if (isNaN(num1) || isNaN(num2)) {
+        result = "❌ Please enter valid numbers.";
+      } else {
+        switch (operation
