@@ -1,0 +1,4 @@
+//task2
+console.log(typeof(num));
+console.log(typeof(name));
+console.log(typeof(iscloudy));

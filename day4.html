@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        td {
+            background-color: #ffffff;
+        }
+        .time-slot {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center; margin-top: 20px;">Weekly Timetable</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="time-slot">Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-slot">8:00 - 9:00 AM</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+            </tr>
+            <tr>
+                <td class="time-slot">9:00 - 10:00 AM</td>
+                <td>Physics</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:00 - 11:00 AM</td>
+                <td>Biology</td>
+                <td>Physics</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:00 - 12:00 PM</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>Physics</td>
+                <td>Math</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td class="time-slot">12:00 - 1:00 PM</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+            </tr>
+            <tr>
+                <td class="time-slot">1:00 - 2:00 PM</td>
+                <td>History</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>Physics</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td class="time-slot">2:00 - 3:00 PM</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>Physics</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

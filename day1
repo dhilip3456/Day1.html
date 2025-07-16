@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>gy<technolo/h1>
+<h1>hello</h1>
+<h2>welcome</h2>
+<h3>welcome</h3>
+<h4>welcome</h4>
+<h5>welcome</h5>
+<h6>welcome</h6>
+<p>
+    Technology is the application of conceptual knowledge to achieve practical 
+    goals, esecially in a reproducible way.[1] The word technology can also 
+    mean the products resulting from such efforts,[2][3] including both tangible
+    tools such as utensils or machines, and intangible ones such as software.
+    Technology plays a critical role in science, engineering, and every life.
+    </p>
+    <hr>
+    <img src="image1.web"alt="">
+    <b>Technology</b>
+    <i>Technology</i>
+    <u>science, engineering, and every life</u>
+    <h2>chemistry</h2>
+    <sub>co2</sub>
+    <h2>maths</h2>
+    <sup>x2y=5</sup>
+    <h3>hello world</h3>
+    <br>world
+<body>
+    
+</body>
+</html>
