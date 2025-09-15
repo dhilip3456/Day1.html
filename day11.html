@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // localStorage -> stores permanently (until cleared by user or code)
+
+        // Correct way to get item from localStorage (only 1 argument)
+        let username = localStorage.getItem("username");
+        console.log("Username:", username);
+
+        // Remove item from localStorage
+        localStorage.removeItem("username");
+
+        // Clear all localStorage data
+        // localStorage.clear();
+
+        // Storing array value in localStorage
+        // localStorage only stores strings, so convert arrays using JSON.stringify
+        var arr = ["dhilip", 18, "web developer"];
+        localStorage.setItem("details", JSON.stringify(arr));
+
+        // Retrieving array from localStorage and parsing it
+        let parsedArr = JSON.parse(localStorage.getItem("details"));
+        console.log("Parsed Array:", parsedArr);
+
+        // Clear storage if needed
+        // localStorage.clear();
+
+        // Storing an array of objects in localStorage
+        let subject = [
+            {
+                "sub1": "math",
+                "sub2": "tamil"
+            }
+        ];
+        localStorage.setItem("subject", JSON.stringify(subject));
+
+        // Retrieve stored object array using correct key
+        let parsedObj = JSON.parse(localStorage.getItem("subject"));
+        console.log("Parsed Object:", parsedObj);
+
+        // sessionStorage -> useful for temporary data (like login session, form progress)
+        sessionStorage.setItem("fruits", "apple");
+
+        let fruits = sessionStorage.getItem("fruits");
+        console.log("Session stored fruits:", fruits);
+    </script>
+</body>
+</html>
